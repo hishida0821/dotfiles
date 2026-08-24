@@ -3,6 +3,8 @@ local config = wezterm.config_builder()
 config.automatically_reload_config = true
 -- 文字サイズの設定
 config.font_size = 12.0
+-- フォント設定
+config.font = wezterm.font 'Fira Code'
 -- 日本語入力可能に
 config.use_ime = true
 -- 背景色の透過率
@@ -10,7 +12,7 @@ config.window_background_opacity = 0.85
 -- 背景のぼかし具合
 config.macos_window_background_blur = 20
 -- タイトルバーの表示設定
-config.window_decorations = "TITLE"
+-- config.window_decorations = "TITLE"
 -- タブの表示設定(一つの時は非表示)
 -- config.hide_tab_bar_if_only_one_tab = true
 -- タブの背景色
